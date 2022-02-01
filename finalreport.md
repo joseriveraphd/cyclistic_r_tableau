@@ -458,8 +458,8 @@ the weekend, as seen on the right-hand panel. This distribution appears
 more uniform and maximum ridership occurs around noon for both casual
 and annual riders.
 
-\#\#\#Number of workday rides per month registered at 8AM and 5PM The
-following plot shows seasonal and hourly trends. The number of rides at
+### Number of workday rides per month registered at 8AM and 5PM 
+The following plot shows seasonal and hourly trends. The number of rides at
 8AM increases more readily for annual members from Feb to Sep than for
 casual riders. However, weekend rides registered by casual users
 increases more rapidly from Feb to Sep. 
@@ -533,6 +533,7 @@ grid.arrange(arrangeGrob(rides_8amvs5pm, left = y.grob))
 ```
 
 ![](cyclisticreport_files/figure-gfm/plot_rides_hours-1.png)<!-- -->
+
 It’s also interesting to note that the number of workday rides at 5PM
 increases from Jul-Sep for annual members. In contrast, casual rides
 decrease over the same time period.
@@ -609,8 +610,9 @@ y.grob <- textGrob(
 grid.arrange(arrangeGrob(plot_rides_month, left = y.grob))
 ```
 
-![](cyclisticreport_files/figure-gfm/plot_rides_month-1.png)<!-- --> The
-plot on the left-hand side shows the monthly number of workday rides for
+![](cyclisticreport_files/figure-gfm/plot_rides_month-1.png)<!-- --> 
+
+The plot on the left-hand side shows the monthly number of workday rides for
 casual and annual users. The plot on the right-hand side shows weekend
 rides per month.
 
