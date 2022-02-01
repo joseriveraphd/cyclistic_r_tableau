@@ -537,8 +537,8 @@ It’s also interesting to note that the number of workday rides at 5PM
 increases from Jul-Sep for annual members. In contrast, casual rides
 decrease over the same time period.
 
-\#\#\#Number of rides per month reveals seasonal trends The success of
-our efforts to convert casual riders to annual members depends on
+### Number of rides per month reveals seasonal trends 
+The success of our efforts to convert casual riders to annual members depends on
 understanding <i>why</i> these riders become members. The seasonal data
 plotted in this section hints at some potential reasons casual riders
 might have when purchasing a membership. First, let’s examine how ride
