@@ -9,7 +9,8 @@ riders might join the platform</b>. As part of their strategy, the
 marketing team seeks advice on using digital media to influence
 conversions.
 
-For the full detailed analysis with code, see finalcode.md.
+For the full detailed analysis with code, see finalcode.md. Note that
+cyclistic_r.Rproj is a reproducible project in RStudio.
 
 <b><font color="blue">The following insights/recommendations are based
 on daily, hourly, and seasonal usage of Cyclistic bikes</b></font>:
