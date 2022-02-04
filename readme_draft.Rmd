@@ -1,6 +1,6 @@
 ---
 title: "Actionable insights for Cyclistic marketing department"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
