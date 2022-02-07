@@ -12,8 +12,17 @@ conversions.
 For the full detailed analysis with code, see finalcode.md. Note that
 cyclistic_r.Rproj is a reproducible project in RStudio.
 
-<b><font color="blue">The following insights/recommendations are based
-on daily, hourly, and seasonal usage of Cyclistic bikes</b></font>:
+# Executive Summary of Recommendations
+
+Here are some of the recommendations highlighted in this report:
+
+<p align="center">
+
+<img src="cyclisticreport_files/tablesummary.png" style="width:100.0%" />
+
+<b><font color="blue"> The following sections contain expanded
+insights/recommendations based on daily, hourly, and seasonal usage of
+Cyclistic bikes</b></font>:
 
 # Monitor Cyclistic user journeys using e-mail sign-ups
 
@@ -34,6 +43,11 @@ a bike. This would allow us to track conversions by monitoring the
 activity of casual riders who sign up for a membership <i>at a later
 date with the same e-mail address</i>.
 
+Furthermore, notice that in May the number of casual weekend rides
+surpasses the number of weekend rides from annual members. In the
+winter, members ride more than casual riders (confirmed in the following
+sections).
+
 # Why do casual riders convert to annual members?
 
 When analyzing hourly data, we see a monthly increase in the use of
@@ -46,9 +60,9 @@ ridership during traditional work hours (see graph below).
 </p>
 
 Given the decrease in casual riders and slight increase in members over
-Jul-Sep months, as well as hourly trends seen above, it could be that
-casual riders join over the summer for recreational use and maximize the
-benefits of their membership by riding to work.
+Jul-Sep months, as well as hourly trends seen above, it seems casual
+riders join over the summer for recreational use and, when they convert,
+they maximize the benefits of their membership by riding to work.
 
 The recreational use of bikes for casual riders is supported by the
 popularity of stations near Navy Pier during the summer season,
@@ -67,34 +81,52 @@ customer types take place over the summer.
 A digital media campaign based on an e-mail newsletter could keep
 Cyclistic users informed of bike-friendly summer events (e.g. festivals,
 parks, etc), particularly near Navy Pier (one of Chicago’s most popular
-tourist destinations).
+tourist destinations). Navy Pier and recreational events along the coast
+should be highlighted given the popularity of Streeter & Grand Ave
+station, which is explained below.
 
-Geospatial data reveals that riders frequently ride from bike stations
-near the water in the summer. In particular, Streeter Dr & Grand Ave is
-the most popular station during the Summer and is located near Navy
-Pier.
+# Which bike stations have the highest number of rides, and when?
+
+The following graph breaks stations down by season, customer type, and
+number of riders at that station.
+
+The graph below shows stations ranked consistently in the top 3 for
+number of rides regardless of season:
+
+<p align="center">
+<img src="cyclisticreport_files/top3stations.png" style="width:100.0%" />
+</p>
+
+In the above bar graph, notice that Streeter Dr & Grand Ave has the most
+number of rides for casual riders during every season except winter.
+This station is located in Navy Pier - one of Chicago’s most popular
+tourist destinations.
+
+In contrast, stations with the most rides for members are Clark St & Elm
+St (Fall, Spring, Winter) and Wells St & Concord Ln (Summer). While
+total number of rides decreases during winter, annual members appear to
+be the most loyal during this season of cold weather.
 
 In the following geospatial graphs of the top 25 stations (in number of
 rides), each circle represents a station. The size of circles represents
-the amount of outgoing rides for a given station. Notice the dominance
-of casual rides (red) over annual member rides (light blue) during the
-summer season. The winter season shows the opposite trend: higher
-ridership from annual members. Furthermore, station popularity shifts
-away from the coast.
+the amount of outgoing rides for a given station.
 
-Note also the decrease in popularity of Navy Pier during Winter relative
-to Summer.
+Notice station popularity (in terms of number of rides) shifts away from
+the coast during winter.
 
 <p align="center">
-<img src="cyclisticreport_files/Summer.png" style="width:70.0%" />
-<img src="cyclisticreport_files/Winter.png" style="width:70.0%" />
+<img src="cyclisticreport_files/gis_summer.png" style="width:70.0%" />
+<img src="cyclisticreport_files/gis_winter.png" style="width:70.0%" />
 </p>
-Furthermore, promoting the newsletter through a blog for non-Cyclistic
-users could promote the platform to people who are trying to figure out
-what to do in Chicago over the weekend. This would allow us to target
-casual riders who registered the maximum number of rides on Saturdays.
-See graph below for trends in number of rides per day on a given
-weekday.
+
+Based on these findings, I recommend a newsletter that highlights summer
+recreational events.
+
+Weekend events should also be highlighted to promote the platform to
+casual riders who are trying to figure out what to do in Chicago over
+the weekend. This would allow us to target casual riders who registered
+the maximum number of rides on Saturdays. See graph below for trends in
+number of rides per day on a given weekday.
 <p align="center">
 <img src="cyclisticreport_files/figure-gfm/plot_rides_per_day-1.png" style="width:70.0%" />
 </p>
@@ -113,26 +145,41 @@ Notice the increase in activity during traditional workday hours 8AM and
 rides during lunch hours. In contrast, hourly ride use becomes more
 evenly distributed over the weekend.
 
-# How long are Cyclistic rides?
+# Preliminary insights on Cyclistic ride lengths
 
 The mean workday ride length/duration for casual riders was
 approximately 24 minutes, and the median was \~14 minutes. In contrast,
 the mean workday ride duration for casual riders was \~29 minutes and
 the median was \~17 minutes.
 
-<font color="red">It should be noted, however, that the difference in
-median and mean values suggests the distribution for ride lengths is
-skewed positive and not normally distributed. <b>The lack of a normal
-distribution for ride lengths should be noted if decision-makers decide
-to follow-up with rigorous statistical modeling</b>.</font> To provide
-preliminary insights, let’s look at a visualization of casual riders and
-annual member distributions.
+It should be noted, however, that the difference in median and mean
+values suggests the distribution for ride lengths is skewed positive and
+not normally distributed.
+
+The lack of a normal distribution for ride lengths should be noted if
+decision-makers decide to follow-up with rigorous statistical modeling.
+To provide preliminary insights, let’s look at a visualization of casual
+riders and annual member distributions.
 
 <p align="center">
 <img src="cyclisticreport_files/figure-gfm/plot_ridelength_density-1.png" style="width:70.0%" />
 </p>
 
-# Full analysis code
+# Conclusions
+
+The insights and recommendations presented here are supported by
+exploratory data analysis. By requiring casual users to register with
+e-mail, we can keep track of the user journey from casual use to annual
+membership. This will provide more insight into the summer trends
+identified above.
+
+Furthermore, creating an e-mail newsletter can influence conversions by
+providing value to casual riders by identifying recreational events in
+Chicago’s tourist areas (such as Navy Pier, where the popular Streeter
+Dr station is located).
+
+Annual membership can also be promoted and retention strategies for
+members are also possible, such as information on lunch hour specials.
 
 The recommendations presented here provide summarized findings after
 data cleaning, analysis, and visualization. For the entire code, see
