@@ -525,8 +525,6 @@ The analysis presented here reveals differences in seasonal, time-of-day, weekly
 
 3. A slight shoulder in the graph showing number of rides per hour on workdays suggests member riders are using bikes during their lunch hours. Coupling Cyclistic memberships with lunch discounts might be another way to engage riders.
 
-4. Using the same e-mail newsletter from #2, advertising cold-weather biking gear or safety tips for riding during potentially hazardous winter months (when ridership is minimized) might keep users more engaged. 
-
 4. It's also possible that the summer season provides a funnel for converting casual riders to annual members, and these members then bike to work in order to maximize the benefits of having an annual Cyclistic membership. This might explain the faster rate of increase in 8AM rides for annual members relative to casual riders. Following up with recommendation #1 would yield more concrete insights into this point. 
 
 
