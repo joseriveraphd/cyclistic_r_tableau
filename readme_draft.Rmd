@@ -1,6 +1,6 @@
 ---
 title: "Actionable insights for Cyclistic marketing department"
-output: word_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -60,7 +60,7 @@ The following graph breaks stations down by customer type and number of riders a
 The graph below shows the top 3 stations in number of casual riders:
 
 <p align="center">
-![](cyclisticreport_files/top3stations_casuals.png){width=90%}
+![](cyclisticreport_files/top3stations_casuals.png){width=70%}
 </p>
 
 Notice that Streeter Dr & Grand Ave dominates in total number of rides for casual riders. This station is near tourist sites like Navy Pier. Similarly, Michigan Ave and Millenium Park are popular tourist attractions.
@@ -68,7 +68,7 @@ Notice that Streeter Dr & Grand Ave dominates in total number of rides for casua
 In contrast, see the top three stations for annual members:
 
 <p align="center">
-![](cyclisticreport_files/top3stations_members.png){width=90%}
+![](cyclisticreport_files/top3stations_members.png){width=70%}
 </p>
 
 
@@ -79,10 +79,12 @@ The map includes only casual riders.
 
 <p align="center">
 ![](cyclisticreport_files/casual_stations.png){width=70%}
+</p>
 
 Notice the popularity of Streeter Dr & Grand Ave near Navy Pier.
 
 In contrast, the popularity of stations for customers who are annual members shifts away from the coast as seen below: 
+<p align="center">
 ![](cyclisticreport_files/member_stations.png){width=70%}
 </p>
 

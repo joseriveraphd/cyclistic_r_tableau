@@ -85,41 +85,47 @@ tourist destinations). Navy Pier and recreational events along the coast
 should be highlighted given the popularity of Streeter & Grand Ave
 station, which is explained below.
 
-# Which bike stations have the highest number of rides, and when?
+# Which bike stations have the highest number of rides?
 
-The following graph breaks stations down by season, customer type, and
-number of riders at that station.
+The following graph breaks stations down by customer type and number of
+riders at that station.
 
-The graph below shows stations ranked consistently in the top 3 for
-number of rides regardless of season:
+The graph below shows the top 3 stations in number of casual riders:
 
 <p align="center">
-<img src="cyclisticreport_files/top3stations.png" style="width:100.0%" />
+<img src="cyclisticreport_files/top3stations_casuals.png" style="width:70.0%" />
 </p>
 
-In the above bar graph, notice that Streeter Dr & Grand Ave has the most
-number of rides for casual riders during every season except winter.
-This station is located in Navy Pier - one of Chicago’s most popular
-tourist destinations.
+Notice that Streeter Dr & Grand Ave dominates in total number of rides
+for casual riders. This station is near tourist sites like Navy Pier.
+Similarly, Michigan Ave and Millenium Park are popular tourist
+attractions.
 
-In contrast, stations with the most rides for members are Clark St & Elm
-St (Fall, Spring, Winter) and Wells St & Concord Ln (Summer). While
-total number of rides decreases during winter, annual members appear to
-be the most loyal during this season of cold weather.
+In contrast, see the top three stations for annual members:
 
-In the following geospatial graphs of the top 25 stations (in number of
+<p align="center">
+<img src="cyclisticreport_files/top3stations_members.png" style="width:70.0%" />
+</p>
+
+In the following geospatial graph of the top stations (in number of
 rides), each circle represents a station. The size of circles represents
 the amount of outgoing rides for a given station.
 
-Notice station popularity (in terms of number of rides) shifts away from
-the coast during winter.
+The map includes only casual riders.
 
 <p align="center">
-<img src="cyclisticreport_files/gis_summer.png" style="width:70.0%" />
-<img src="cyclisticreport_files/gis_winter.png" style="width:70.0%" />
+<img src="cyclisticreport_files/casual_stations.png" style="width:70.0%" />
 </p>
 
-Based on these findings, I recommend a newsletter that highlights summer
+Notice the popularity of Streeter Dr & Grand Ave near Navy Pier.
+
+In contrast, the popularity of stations for customers who are annual
+members shifts away from the coast as seen below:
+<p align="center">
+<img src="cyclisticreport_files/member_stations.png" style="width:70.0%" />
+</p>
+
+Based on these findings, I recommend a newsletter that highlights
 recreational events.
 
 Weekend events should also be highlighted to promote the platform to
@@ -179,7 +185,7 @@ Chicago’s tourist areas (such as Navy Pier, where the popular Streeter
 Dr station is located).
 
 Annual membership can also be promoted and retention strategies for
-members are also possible, such as information on lunch hour specials.
+members are also possible - such as information on lunch hour specials.
 
 The recommendations presented here provide summarized findings after
 data cleaning, analysis, and visualization. For the entire code, see
