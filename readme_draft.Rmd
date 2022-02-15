@@ -120,7 +120,7 @@ Hourly bike use should also be considered. Based on the graph below, which shows
 </p>
 Notice the increase in activity during traditional workday hours 8AM and 5PM (08:00 and 17:00 hours in the graphs), and the slight uptick in rides during lunch hours. In contrast, hourly ride use becomes more evenly distributed over the weekend.
 
-<b>The key performance metrics for the newsletter can be the number of rides per geospatial cluster, weekday vs workday, and hour (e.g. lunch).</b>
+Therefore, <b>the key performance metrics for the newsletter are the number of rides per geospatial cluster, weekday vs workday, and hour (e.g. lunch).</b>
  
 Additional key performance metrics for the future could be number of sign-ups and conversions based on tracking the user journey with e-mail addresses that I proposed above.
 
@@ -145,5 +145,9 @@ Clustering the populations of casual riders and annual members based on geospati
 
 The recommendations presented here provide summarized findings after data cleaning, analysis, and visualization. For the entire code, see finalcode.md. 
 
-
+```{r, include=FALSE}
+   # save to README.md
+   file.rename(from="readme_draft.md", 
+               to="README.md")
+```
 

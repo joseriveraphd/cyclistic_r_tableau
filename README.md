@@ -179,8 +179,8 @@ Notice the increase in activity during traditional workday hours 8AM and
 rides during lunch hours. In contrast, hourly ride use becomes more
 evenly distributed over the weekend.
 
-<b>The key performance metrics for the newsletter can be the number of
-rides per geospatial cluster, weekday vs workday, and hour
+Therefore, <b>the key performance metrics for the newsletter are the
+number of rides per geospatial cluster, weekday vs workday, and hour
 (e.g. lunch).</b>
 
 Additional key performance metrics for the future could be number of
