@@ -14,11 +14,16 @@ cyclistic_r.Rproj is a reproducible project in RStudio.
 
 # Executive Summary of Recommendations
 
-Here are some of the recommendations highlighted in this report:
+Here are the recommendations highlighted in this report:
 
-<p align="center">
+1.  Require e-mail sign-ups to track user journeys.
 
-<img src="cyclisticreport_files/tablesummary.png" style="width:100.0%" />
+2.  Create an <b>e-mail newsletter</b> that targets two clusters of
+    casual riders and annual members (based on geospatial data).
+
+3.  Track <b>key performance metrics</b>, such as number of rides based
+    on geospatial, hourly, and seasonal trends to monitor the
+    <b>effectiveness of the newsletter</b>.
 
 <b><font color="blue"> The following sections contain expanded
 insights/recommendations based on daily, hourly, and seasonal usage of
@@ -48,27 +53,7 @@ surpasses the number of weekend rides from annual members. In the
 winter, members ride more than casual riders (confirmed in the following
 sections).
 
-# Why do casual riders convert to annual members?
-
-When analyzing hourly data, we see a monthly increase in the use of
-bikes at 8AM and 5PM which suggests a tendency for annual members to use
-bikes during work hours, while casual riders lag in the increase of
-ridership during traditional work hours (see graph below).
-
-<p align="center">
-<img src="cyclisticreport_files/figure-gfm/plot_rides_hours-1.png" style="width:70.0%" />
-</p>
-
-Given the decrease in casual riders and slight increase in members over
-Jul-Sep months, as well as hourly trends seen above, it seems casual
-riders join over the summer for recreational use and, when they convert,
-they maximize the benefits of their membership by riding to work.
-
-The recreational use of bikes for casual riders is supported by the
-popularity of stations near Navy Pier during the summer season,
-explained in the following sections.
-
-# Create e-mail newsletter and blog that highlights weekend and summer recreational events
+# Create e-mail newsletter that targets customers based on local rides/engagement
 
 Whether the majority of conversions occur during the summer or not, it
 is evident from seasonal trends that most rides for casual and member
@@ -85,10 +70,14 @@ tourist destinations). Navy Pier and recreational events along the coast
 should be highlighted given the popularity of Streeter & Grand Ave
 station, which is explained below.
 
-# Which bike stations have the highest number of rides?
+## Segment the e-mail list based on geospatial data and number of rides per station
 
-The following graph breaks stations down by customer type and number of
-riders at that station.
+In order to make the e-mail newsletter effective, we can segment the
+population of customers. Based on geospatial data we identify two
+segments of bike stations for each customer type:
+
+Cluster 1: Stations near the shore (e.g. Navy Pier, Michigan Ave,
+Millenium Park) Cluster 2: Stations away away from the shore
 
 The graph below shows the top 3 stations in number of casual riders:
 
@@ -99,7 +88,18 @@ The graph below shows the top 3 stations in number of casual riders:
 Notice that Streeter Dr & Grand Ave dominates in total number of rides
 for casual riders. This station is near tourist sites like Navy Pier.
 Similarly, Michigan Ave and Millenium Park are popular tourist
-attractions.
+attractions. These fall under Cluster 1 for casual riders.
+
+In the following geospatial graph of the top stations (in number of
+rides), each circle represents a station. The size of circles represents
+the amount of outgoing rides for a given station.
+
+Cluster 1, stations near the shore, are much more popular with casual
+riders
+
+<p align="center">
+<img src="cyclisticreport_files/casual_stations.png" style="width:70.0%" />
+</p>
 
 In contrast, see the top three stations for annual members:
 
@@ -107,40 +107,68 @@ In contrast, see the top three stations for annual members:
 <img src="cyclisticreport_files/top3stations_members.png" style="width:70.0%" />
 </p>
 
-In the following geospatial graph of the top stations (in number of
-rides), each circle represents a station. The size of circles represents
-the amount of outgoing rides for a given station.
+The popularity of stations for customers who are annual members shifts
+away from the coast as seen below, where Cluster 2 is more dominant:
 
-The map includes only casual riders.
-
-<p align="center">
-<img src="cyclisticreport_files/casual_stations.png" style="width:70.0%" />
-</p>
-
-Notice the popularity of Streeter Dr & Grand Ave near Navy Pier.
-
-In contrast, the popularity of stations for customers who are annual
-members shifts away from the coast as seen below:
 <p align="center">
 <img src="cyclisticreport_files/member_stations.png" style="width:70.0%" />
 </p>
 
-Based on these findings, I recommend a newsletter that highlights
-recreational events.
+Findings from geospatial data reveal the following trends: 1. Number of
+rides in cluster 1 is higher for casual riders 2. Number of rides in
+cluster 2 is higher for annual members
 
-Weekend events should also be highlighted to promote the platform to
-casual riders who are trying to figure out what to do in Chicago over
-the weekend. This would allow us to target casual riders who registered
-the maximum number of rides on Saturdays. See graph below for trends in
-number of rides per day on a given weekday.
+The top stations in Cluster 1 contain recreational areas (Navy Pier,
+Millenium Park, etc.) while stations in Cluster 2 contain commercial
+establishments.
+
+Based on these geospatial trends, I recommend the e-mail newsletter
+target each cluster differently.
+
+The data suggests casual riders might join the platform for recreational
+reasons and continue to use their membership for work. More evidence is
+provided for this statement in the following section.
+
+# Why do casual riders convert to annual members?
+
+When analyzing hourly data, we see a monthly increase in the use of
+bikes at 8AM and 5PM which suggests a tendency for annual members to use
+bikes during work hours, while casual riders lag in the increase of
+ridership during traditional work hours (see graph below).
+
+<p align="center">
+<img src="cyclisticreport_files/figure-gfm/plot_rides_hours-1.png" style="width:70.0%" />
+</p>
+
+<b>Given the decrease in casual riders and slight increase in members
+over Jul-Sep months, as well as hourly and geospatial trends seen above,
+it seems casual riders join over the summer for recreational use and,
+when they convert, they maximize the benefits of their membership by
+riding to work.</b>
+
+# Track key performance metrics to maximize the effectiveness of newsletter
+
+With the current data, we can only keep track of number of rides.
+Assuming that is all we have, let’s use weekend and workday number of
+rides to monitor the effectiveness of the newsletter.
+
+Based on the increased number of weekend rides for casual riders,
+weekend events should be highlighted in the newsletter to promote the
+platform to casual riders who are trying to figure out what to do in
+Chicago over the weekend.
+
+This would allow us to target casual riders who registered the maximum
+number of rides on Saturdays. See graph below for trends in number of
+rides per day on a given weekday.
+
 <p align="center">
 <img src="cyclisticreport_files/figure-gfm/plot_rides_per_day-1.png" style="width:70.0%" />
 </p>
 
-Hourly bike use was also considered. Based on the graph below, which
-shows increased activity for members during (working) lunch hours, I
-also recommend the newsletter highlight the flexibility of biking to
-work and grabbing a bite to eat.
+Hourly bike use should also be considered. Based on the graph below,
+which shows increased activity for members during (working) lunch hours,
+I also recommend the newsletter highlight the benefit of biking to work
+and grabbing a bite to eat.
 
 <p align="center">
 <img src="cyclisticreport_files/figure-gfm/plot_rides_tod-1.png" style="width:70.0%" />
@@ -150,6 +178,14 @@ Notice the increase in activity during traditional workday hours 8AM and
 5PM (08:00 and 17:00 hours in the graphs), and the slight uptick in
 rides during lunch hours. In contrast, hourly ride use becomes more
 evenly distributed over the weekend.
+
+<b>The key performance metrics for the newsletter can be the number of
+rides per geospatial cluster, weekday vs workday, and hour
+(e.g. lunch).</b>
+
+Additional key performance metrics for the future could be number of
+sign-ups and conversions based on tracking the user journey with e-mail
+addresses that I proposed above.
 
 # Preliminary insights on Cyclistic ride lengths
 
@@ -176,16 +212,13 @@ riders and annual member distributions.
 The insights and recommendations presented here are supported by
 exploratory data analysis. By requiring casual users to register with
 e-mail, we can keep track of the user journey from casual use to annual
-membership. This will provide more insight into the summer trends
-identified above.
+membership.
 
-Furthermore, creating an e-mail newsletter can influence conversions by
-providing value to casual riders by identifying recreational events in
-Chicago’s tourist areas (such as Navy Pier, where the popular Streeter
-Dr station is located).
+I propose an e-mail newsletter to influence conversions.
 
-Annual membership can also be promoted and retention strategies for
-members are also possible - such as information on lunch hour specials.
+Clustering the populations of casual riders and annual members based on
+geospatial and hourly trends allows us to target riders based on their
+current journey (recreational use vs workday use).
 
 The recommendations presented here provide summarized findings after
 data cleaning, analysis, and visualization. For the entire code, see
