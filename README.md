@@ -16,14 +16,18 @@ cyclistic_r.Rproj is a reproducible project in RStudio.
 
 Here are the recommendations highlighted in this report:
 
-1.  Require e-mail sign-ups to track user journeys.
+1.  Require e-mail sign-ups to track user journeys so that we can
+    uncover behavior patterns and drive conversions from causal riders
+    to annual members.
 
-2.  Create an <b>e-mail newsletter</b> that targets two clusters of
-    casual riders and annual members (based on geospatial data).
+2.  Tailor digital communications (e.g. e-mail newsletter, SMS
+    marketing, etc.) to customers based on customer type (casual rider
+    vs annual member), season of the year, hourly trends, and geospatial
+    data.
 
-3.  Track <b>key performance metrics</b>, such as number of rides based
-    on geospatial, hourly, and seasonal trends to monitor the
-    <b>effectiveness of the newsletter</b>.
+3.  Track <b>key performance metrics</b>, including number of
+    trips/rides by casual riders vs annual members/subscribers based on
+    geospatial, hourly, and seasonal trends.
 
 <b><font color="blue"> The following sections contain expanded
 insights/recommendations based on daily, hourly, and seasonal usage of
@@ -44,16 +48,17 @@ casual rides over the same seasonal period. See graph below.
 casual riders taking place. To validate this claim, I recommend tracking
 user journeys in the Cyclistic platform.</i> One way to do this is to
 require first-time casual riders to enter their e-mail before taking out
-a bike. This would allow us to track conversions by monitoring the
-activity of casual riders who sign up for a membership <i>at a later
-date with the same e-mail address</i>.
+a bike.
+
+This would allow us to track users as they progress from casual rider to
+annual member.
 
 Furthermore, notice that in May the number of casual weekend rides
 surpasses the number of weekend rides from annual members. In the
 winter, members ride more than casual riders (confirmed in the following
 sections).
 
-# Create e-mail newsletter that targets customers based on local rides/engagement
+# Tailor digital communications based on seasonal, hourly, and geospatial trends
 
 Whether the majority of conversions occur during the summer or not, it
 is evident from seasonal trends that most rides for casual and member
@@ -63,21 +68,26 @@ customer types take place over the summer.
 <img src="cyclisticreport_files/totalrides_season.png" style="width:70.0%" />
 </p>
 
-A digital media campaign based on an e-mail newsletter could keep
-Cyclistic users informed of bike-friendly summer events (e.g. festivals,
-parks, etc), particularly near Navy Pier (one of Chicago’s most popular
-tourist destinations). Navy Pier and recreational events along the coast
-should be highlighted given the popularity of Streeter & Grand Ave
-station, which is explained below.
+A digital media campaign (e.g. e-mail newsletter) can educate Cyclistic
+users of bike-friendly summer events (e.g. festivals, parks, etc),
+particularly near Navy Pier (one of Chicago’s most popular tourist
+destinations). Navy Pier and recreational events along the coast should
+be highlighted given the popularity of Streeter & Grand Ave station,
+which is explained below.
+
+Digital communications during winter would change to retain customer
+loyalty during winter months. These riders can be targeted based on
+geospatial location data as seen below.
 
 ## Segment the e-mail list based on geospatial data and number of rides per station
 
-In order to make the e-mail newsletter effective, we can segment the
-population of customers. Based on geospatial data we identify two
-segments of bike stations for each customer type:
+In order to increase the effectiveness of the campaign, we can target
+segments of customers. Based on geospatial data we identify two segments
+of bike stations for each customer type (casual rider vs annual member):
 
-Cluster 1: Stations near the shore (e.g. Navy Pier, Michigan Ave,
-Millenium Park) Cluster 2: Stations away away from the shore
+1.  Cluster 1: Stations near the shore (e.g. Navy Pier, Michigan Ave,
+    Millenium Park)
+2.  Cluster 2: Stations away away from the shore
 
 The graph below shows the top 3 stations in number of casual riders:
 
@@ -114,16 +124,15 @@ away from the coast as seen below, where Cluster 2 is more dominant:
 <img src="cyclisticreport_files/member_stations.png" style="width:70.0%" />
 </p>
 
-Findings from geospatial data reveal the following trends: 1. Number of
-rides in cluster 1 is higher for casual riders 2. Number of rides in
-cluster 2 is higher for annual members
+Findings from geospatial data reveal the following trends:
+
+1.  Number of rides in cluster 1 is higher for casual riders
+
+2.  Number of rides in cluster 2 is higher for annual members
 
 The top stations in Cluster 1 contain recreational areas (Navy Pier,
-Millenium Park, etc.) while stations in Cluster 2 contain commercial
-establishments.
-
-Based on these geospatial trends, I recommend the e-mail newsletter
-target each cluster differently.
+Millenium Park, etc.) while stations in Cluster 2 contain a mix of
+commercial and tourist establishments.
 
 The data suggests casual riders might join the platform for recreational
 reasons and continue to use their membership for work. More evidence is
@@ -143,19 +152,19 @@ ridership during traditional work hours (see graph below).
 <b>Given the decrease in casual riders and slight increase in members
 over Jul-Sep months, as well as hourly and geospatial trends seen above,
 it seems casual riders join over the summer for recreational use and,
-when they convert, they maximize the benefits of their membership by
+when they subscribe, they maximize the benefits of their membership by
 riding to work.</b>
 
-# Track key performance metrics to maximize the effectiveness of newsletter
+# Track key performance metrics to maximize the effectiveness of digital campaign
 
 With the current data, we can only keep track of number of rides.
-Assuming that is all we have, let’s use weekend and workday number of
-rides to monitor the effectiveness of the newsletter.
+Assuming that is all we have, let’s use <b> weekend and workday number
+of rides per customer type </b> to monitor the effectiveness of the
+campaign.
 
-Based on the increased number of weekend rides for casual riders,
-weekend events should be highlighted in the newsletter to promote the
-platform to casual riders who are trying to figure out what to do in
-Chicago over the weekend.
+Based on the increased number of weekend rides for casual riders, local
+weekend events should be highlighted in digital communications to
+encourage more people to ride and discover Chicago over the weekend.
 
 This would allow us to target casual riders who registered the maximum
 number of rides on Saturdays. See graph below for trends in number of
@@ -167,8 +176,8 @@ rides per day on a given weekday.
 
 Hourly bike use should also be considered. Based on the graph below,
 which shows increased activity for members during (working) lunch hours,
-I also recommend the newsletter highlight the benefit of biking to work
-and grabbing a bite to eat.
+I also recommend a digital campaign that highlights the benefits of
+biking to work and grabbing a quick bite to eat.
 
 <p align="center">
 <img src="cyclisticreport_files/figure-gfm/plot_rides_tod-1.png" style="width:70.0%" />
@@ -180,12 +189,8 @@ rides during lunch hours. In contrast, hourly ride use becomes more
 evenly distributed over the weekend.
 
 Therefore, <b>the key performance metrics for the newsletter are the
-number of rides per geospatial cluster, weekday vs workday, and hour
-(e.g. lunch).</b>
-
-Additional key performance metrics for the future could be number of
-sign-ups and conversions based on tracking the user journey with e-mail
-addresses that I proposed above.
+number of rides per customer type based on geospatial clusters, weekday
+vs workday, and time of day (e.g. lunch).</b>
 
 # Preliminary insights on Cyclistic ride lengths
 
