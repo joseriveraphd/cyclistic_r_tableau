@@ -13,13 +13,13 @@ For the full detailed analysis with code, see finalcode.md. Note that cyclistic_
 
 # Executive Summary of Recommendations
 
-Here are the recommendations highlighted in this report:
+Here are the recommendations <b>in priority order</b>:
 
 1. Require e-mail sign-ups to track user journeys so that we can uncover behavior patterns and drive conversions from causal riders to annual members.
 
-2. Tailor digital communications (e.g. e-mail newsletter, SMS marketing, etc.) to customers based on customer type (casual rider vs annual member), season of the year, hourly trends, and geospatial data. 
+2. Modify <b>key performance metrics</b> to include number of trips/rides by casual riders vs annual members/subscribers based on geospatial, hourly, and seasonal trends, due to <b>observed differences that can aid in persona development</b>.
 
-3. Track <b>key performance metrics</b>, including number of trips/rides by casual riders vs annual members/subscribers based on geospatial, hourly, and seasonal trends.
+3. Tailor marketing campaigns based on customer type (casual rider vs annual member), season of the year, hourly trends, and locations. 
 
 <b><font color="blue"> The following sections contain expanded insights/recommendations based on daily, hourly, and seasonal usage of Cyclistic bikes</b></font>: 
 
@@ -52,8 +52,8 @@ Digital communications during winter would change to retain customer loyalty dur
 
 In order to increase the effectiveness of the campaign, we can target segments of customers. Based on geospatial data we identify two segments of bike stations for each customer type (casual rider vs annual member):
 
-1. Cluster 1: Stations near the shore (e.g. Navy Pier, Michigan Ave, Millenium Park)
-2. Cluster 2: Stations away away from the shore
+1. Group 1: Stations near the shore (e.g. Navy Pier, Michigan Ave, Millenium Park)
+2. Group 2: Stations away away from the shore
 
 The graph below shows the top 3 stations in number of casual riders:
 
@@ -61,11 +61,11 @@ The graph below shows the top 3 stations in number of casual riders:
 ![](cyclisticreport_files/top3stations_casuals.png){width=70%}
 </p>
 
-Notice that Streeter Dr & Grand Ave dominates in total number of rides for casual riders. This station is near tourist sites like Navy Pier. Similarly, Michigan Ave and Millenium Park are popular tourist attractions. These fall under Cluster 1 for casual riders.
+Notice that Streeter Dr & Grand Ave dominates in total number of rides for casual riders. This station is near tourist sites like Navy Pier. Similarly, Michigan Ave and Millenium Park are popular tourist attractions. These fall under Group 1 for casual riders.
 
 In the following geospatial graph of the top stations (in number of rides), each circle represents a station. The size of circles represents the amount of outgoing rides for a given station. 
 
-Cluster 1, stations near the shore, are much more popular with casual riders
+Group 1, stations near the shore, are much more popular with casual riders
 
 <p align="center">
 ![](cyclisticreport_files/casual_stations.png){width=70%}
@@ -78,7 +78,7 @@ In contrast, see the top three stations for annual members:
 </p>
 
 
-The popularity of stations for customers who are annual members shifts away from the coast as seen below, where Cluster 2 is more dominant: 
+The popularity of stations for customers who are annual members shifts away from the coast as seen below, where Group 2 is more dominant: 
 
 <p align="center">
 ![](cyclisticreport_files/member_stations.png){width=70%}
@@ -86,23 +86,23 @@ The popularity of stations for customers who are annual members shifts away from
 
 Findings from geospatial data reveal the following trends:
 
-1. Number of rides in cluster 1 is higher for casual riders
+1. Number of rides in Group 1 is higher for casual riders
 
-2. Number of rides in cluster 2 is higher for annual members
+2. Number of rides in Group 2 is higher for annual members
 
-The top stations in Cluster 1 contain recreational areas (Navy Pier, Millenium Park, etc.) while stations in Cluster 2 contain a mix of commercial and tourist establishments.
+The top stations in Group 1 contain recreational areas (Navy Pier, Millenium Park, etc.) while stations in Group 2 contain a mix of commercial and tourist establishments.
 
 The data suggests casual riders might join the platform for recreational reasons and continue to use their membership for work. More evidence is provided for this statement in the following section.
 
 # Why do casual riders convert to annual members?
+
+<b>Given the decrease in casual riders and slight increase in members over Jul-Sep months, as well as hourly and geospatial trends seen above, it seems casual riders join over the summer for recreational use and, when they subscribe, they maximize the benefits of their membership by riding to work.</b> This hypothesis should be validated with additional research (e.g. qualitative research).
 
 When analyzing hourly data, we see a monthly increase in the use of bikes at 8AM and 5PM which suggests a tendency for annual members to use bikes during work hours, while casual riders lag in the increase of ridership during traditional work hours (see graph below).
 
 <p align="center">
 ![](cyclisticreport_files/figure-gfm/plot_rides_hours-1.png){width=70%}
 </p>
-
-<b>Given the decrease in casual riders and slight increase in members over Jul-Sep months, as well as hourly and geospatial trends seen above, it seems casual riders join over the summer for recreational use and, when they subscribe, they maximize the benefits of their membership by riding to work.</b>
 
 # Track key performance metrics to maximize the effectiveness of digital campaign
 
@@ -123,9 +123,9 @@ Hourly bike use should also be considered. Based on the graph below, which shows
 </p>
 Notice the increase in activity during traditional workday hours 8AM and 5PM (08:00 and 17:00 hours in the graphs), and the slight uptick in rides during lunch hours. In contrast, hourly ride use becomes more evenly distributed over the weekend.
 
-Therefore, <b>the key performance metrics for the newsletter are the number of rides per customer type based on geospatial clusters, weekday vs workday, and time of day (e.g. lunch).</b>
+Therefore, <b>the key performance metrics are the number of rides per customer type based on geospatial groups, weekday vs workday, and time of day (e.g. lunch).</b>
  
-# Preliminary insights on Cyclistic ride lengths
+# Additional insights on Cyclistic ride lengths
 
 The mean workday ride length/duration for casual riders was approximately 24 minutes, and the median was ~14 minutes. In contrast, the mean workday ride duration for casual riders was ~29 minutes and the median was ~17 minutes. 
 
@@ -140,9 +140,7 @@ The lack of a normal distribution for ride lengths should be noted if decision-m
 # Conclusions
 The insights and recommendations presented here are supported by exploratory data analysis. By requiring casual users to register with e-mail, we can keep track of the user journey from casual use to annual membership.
 
-I propose an e-mail newsletter to influence conversions.
-
-Clustering the populations of casual riders and annual members based on geospatial and hourly trends allows us to target riders based on their current journey (recreational use vs workday use).
+Grouping the populations of casual riders and annual members based on geospatial and hourly trends allows us to target riders based on their current journey (recreational use vs workday use). 
 
 The recommendations presented here provide summarized findings after data cleaning, analysis, and visualization. For the entire code, see finalcode.md. 
 
