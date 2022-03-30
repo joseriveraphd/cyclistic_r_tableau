@@ -9,8 +9,8 @@ riders might join the platform</b>. As part of their strategy, the
 marketing team seeks advice on using digital media to influence
 conversions.
 
-For the full detailed analysis with code, see finalcode.md. Note that
-cyclistic_r.Rproj is a reproducible project in RStudio.
+**For the full detailed analysis with code, see <a href="https://github.com/joseriveraphd/cyclistic_r_tableau/blob/master/finalcode.md"> finalcode.md</a>. Note that
+cyclistic_r.Rproj is a reproducible project in RStudio.**
 
 # Executive Summary of Recommendations
 
