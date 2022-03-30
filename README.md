@@ -117,7 +117,7 @@ In contrast, see the top three stations for annual members:
 </p>
 
 The popularity of stations for customers who are annual members shifts
-away from the coast as seen below, where Group 2 is more dominant:
+away from the coast as seen below:
 
 <p align="center">
 <img src="cyclisticreport_files/member_stations.png" style="width:70.0%" />
@@ -125,12 +125,12 @@ away from the coast as seen below, where Group 2 is more dominant:
 
 Findings from geospatial data reveal the following trends:
 
-1.  Number of rides in Group 1 is higher for casual riders
+1.  Number of rides in Group 1 is higher for annual members
 
-2.  Number of rides in Group 2 is higher for annual members
+2.  Number of rides in Group 2 is higher for casual riders
 
-The top stations in Group 1 contain recreational areas (Navy Pier,
-Millenium Park, etc.) while stations in Group 2 contain a mix of
+The top stations in Group 2 contain recreational areas (Navy Pier,
+Millenium Park, etc.) while stations in Group 1 contain a mix of
 commercial and tourist establishments.
 
 The data suggests casual riders might join the platform for recreational
