@@ -84,9 +84,9 @@ In order to increase the effectiveness of the campaign, we can target
 segments of customers. Based on geospatial data we identify two segments
 of bike stations for each customer type (casual rider vs annual member):
 
-1.  Group 1: Stations near the shore (e.g. Navy Pier, Michigan Ave,
+1.  Group 1: Stations away away from the shore 
+2.  Group 2: Stations near the shore (e.g. Navy Pier, Michigan Ave,
     Millenium Park)
-2.  Group 2: Stations away away from the shore
 
 The graph below shows the top 3 stations in number of casual riders:
 
@@ -102,9 +102,6 @@ attractions. These fall under Group 1 for casual riders.
 In the following geospatial graph of the top stations (in number of
 rides), each circle represents a station. The size of circles represents
 the amount of outgoing rides for a given station.
-
-Group 1, stations near the shore, are much more popular with casual
-riders
 
 <p align="center">
 <img src="cyclisticreport_files/casual_stations.png" style="width:70.0%" />
