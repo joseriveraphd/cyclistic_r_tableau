@@ -97,7 +97,7 @@ The graph below shows the top 3 stations in number of casual riders:
 Notice that Streeter Dr & Grand Ave dominates in total number of rides
 for casual riders. This station is near tourist sites like Navy Pier.
 Similarly, Michigan Ave and Millenium Park are popular tourist
-attractions. These fall under Group 1 for casual riders.
+attractions. 
 
 In the following geospatial graph of the top stations (in number of
 rides), each circle represents a station. The size of circles represents
