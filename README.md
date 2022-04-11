@@ -207,14 +207,12 @@ riders and annual member distributions.
 
 # Conclusions
 
-The insights and recommendations presented here are supported by
-exploratory data analysis. By requiring casual users to register with
-e-mail, we can keep track of the user journey from casual use to annual
-membership.
+The insights and recommendations provided were supported by
+exploratory data analysis. 
 
-Grouping the populations of casual riders and annual members based on
+Summer months provide one possible seasonal target for marketing efforts. Grouping the populations of casual riders and annual members based on
 geospatial and hourly trends allows us to target riders based on their
-current journey (recreational use vs workday use).
+current journey (recreational use vs workday use). Furthermore, the key performance metrics proposed here can be tracked to monitor the effectiveness of marketing efforts. 
 
 The recommendations presented here provide summarized findings after
 data cleaning, analysis, and visualization. For the entire code, see
