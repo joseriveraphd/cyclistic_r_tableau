@@ -12,21 +12,21 @@ conversions.
 **For the full detailed analysis with code, see <a href="https://github.com/joseriveraphd/cyclistic_r_tableau/blob/master/finalcode.md"> finalcode.md</a>. Note that
 cyclistic_r.Rproj is a reproducible project in RStudio.**
 
-# Executive Summary of Recommendations
+# Executive Summary of Recommendations & Insights
 
-Here are the recommendations <b>in priority order</b>:
+Here are the recommendations and insights <b>in priority order</b>:
 
-1.  Require e-mail sign-ups to track user journeys so that we can
-    uncover behavior patterns and drive conversions from causal riders
-    to annual members.
+1.  The number of customers is maximized during the summer months, with a potential conversion event taking place that merits further investigation. 
 
-2.  Modify <b>key performance metrics</b> to include number of
+2.  Track <b>key performance metrics</b> including the number of
     trips/rides by casual riders vs annual members/subscribers based on
     geospatial, hourly, and seasonal trends, due to <b>observed
     differences that can aid in persona development</b>.
 
 3.  Tailor marketing campaigns based on customer type (casual rider vs
     annual member), season of the year, hourly trends, and locations.
+    
+4.  Follow-up with more rigorous geospatial clustering analysis (Data Science team).
 
 <b><font color="blue"> The following sections contain expanded
 insights/recommendations based on daily, hourly, and seasonal usage of
@@ -44,22 +44,16 @@ casual rides over the same seasonal period. See graph below.
 </p>
 
 <i>This trend inspires us to wonder whether there is a conversion of
-casual riders taking place. To validate this claim, I recommend tracking
-user journeys in the Cyclistic platform.</i> One way to do this is to
-require first-time casual riders to enter their e-mail before taking out
-a bike.
+casual riders taking place. To validate this claim, we need to track e-mail signups and monitor the customer journey.</i> What factors might influence their decision to convert from casual rider to annual member? In this report, we draw insights from the data as a first round of exploratory data analysis to help answer this question.
 
-This would allow us to track users as they progress from casual rider to
-annual member.
-
-Furthermore, notice that in May the number of casual weekend rides
+We leave this section with an additional insight: notice that in May the number of casual weekend rides
 surpasses the number of weekend rides from annual members. In the
 winter, members ride more than casual riders (confirmed in the following
 sections).
 
 # Tailor digital communications based on seasonal, hourly, and geospatial trends
 
-Whether the majority of conversions occur during the summer or not, it
+Whether the majority of conversions actually occur during the summer or not, it
 is evident from seasonal trends that most rides for casual and member
 customer types take place over the summer.
 
@@ -67,22 +61,24 @@ customer types take place over the summer.
 <img src="cyclisticreport_files/totalrides_season.png" style="width:70.0%" />
 </p>
 
-A digital media campaign (e.g. e-mail newsletter) can educate Cyclistic
-users of bike-friendly summer events (e.g. festivals, parks, etc),
+A digital media campaign (e.g. e-mail newsletter) that focuses on bike-friendly summer events (e.g. festivals, parks, etc),
 particularly near Navy Pier (one of Chicago’s most popular tourist
-destinations). Navy Pier and recreational events along the coast should
+destinations), might be useful. We leave this to the Marketing team to decide. Navy Pier and recreational events along the coast can also
 be highlighted given the popularity of Streeter & Grand Ave station,
 which is explained below.
 
-Digital communications during winter would change to retain customer
+Digital communications during winter could change to retain customer
 loyalty during winter months. These riders can be targeted based on
 geospatial location data as seen below.
 
-## Segment the e-mail list based on geospatial data and number of rides per station
+## Grouping customers based on geospatial data and number of rides per station
 
 In order to increase the effectiveness of the campaign, we can target
-segments of customers. Based on geospatial data we identify two segments
-of bike stations for each customer type (casual rider vs annual member):
+segments of customers. In this analytic report, we are only looking at trends that are visually apparent. 
+
+I recommend the Data Science team follow-up with more rigorous clustering analysis. 
+
+Based on geospatial data we identify two groups of bike stations for each customer type (casual rider vs annual member):
 
 1.  Group 1: Stations away away from the shore 
 2.  Group 2: Stations near the shore (e.g. Navy Pier, Michigan Ave,
@@ -94,7 +90,7 @@ The graph below shows the top 3 stations in number of casual riders:
 <img src="cyclisticreport_files/top3stations_casuals.png" style="width:70.0%" />
 </p>
 
-Notice that Streeter Dr & Grand Ave dominates in total number of rides
+Notice that Streeter Dr & Grand Ave dominates when it comes to the total number of rides
 for casual riders. This station is near tourist sites like Navy Pier.
 Similarly, Michigan Ave and Millenium Park are popular tourist
 attractions. 
