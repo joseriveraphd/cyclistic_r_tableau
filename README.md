@@ -32,7 +32,7 @@ Here are the recommendations and insights <b>in priority order</b>:
 insights/recommendations based on daily, hourly, and seasonal usage of
 Cyclistic bikes</b></font>:
 
-# Monitor Cyclistic user journeys using e-mail sign-ups
+# Potential conversion event during summer months
 
 The greatest number of rides for both casual riders and annual members
 are registered over the summer. There is a \~5% increase in workday
@@ -44,14 +44,14 @@ casual rides over the same seasonal period. See graph below.
 </p>
 
 <i>This trend inspires us to wonder whether there is a conversion of
-casual riders taking place. To validate this claim, we need to track e-mail signups and monitor the customer journey.</i> What factors might influence their decision to convert from casual rider to annual member? In this report, we draw insights from the data as a first round of exploratory data analysis to help answer this question.
+casual riders taking place. </i> In this report, we draw insights from the data as a first round of exploratory data analysis to explore why customers might be converting and to eventually help in developing a buyer persona.
 
 We leave this section with an additional insight: notice that in May the number of casual weekend rides
 surpasses the number of weekend rides from annual members. In the
 winter, members ride more than casual riders (confirmed in the following
 sections).
 
-# Tailor digital communications based on seasonal, hourly, and geospatial trends
+# Seasonal, hourly, and geospatial trends
 
 Whether the majority of conversions actually occur during the summer or not, it
 is evident from seasonal trends that most rides for casual and member
@@ -148,7 +148,7 @@ ridership during traditional work hours (see graph below).
 <img src="cyclisticreport_files/figure-gfm/plot_rides_hours-1.png" style="width:70.0%" />
 </p>
 
-# Track key performance metrics to maximize the effectiveness of digital campaign
+# Track key performance metrics to maximize the effectiveness of any digital campaign
 
 With the current data, we can only keep track of number of rides.
 Assuming that is all we have, let’s use <b> weekend and workday number
